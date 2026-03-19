@@ -16,9 +16,9 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${{secrets.HOST }}
-          username: ${{secrets.USERNAME }}
-          key: ${{secrets.KEY }}
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          key: ${{secrets.KEY}}
           script: |
             cd /home/ubuntu/nodejs-application-deploy-guthub-actions
             git pull origin main
